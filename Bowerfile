@@ -1,0 +1,4 @@
+asset 'jquery'
+asset 'angular'
+asset 'angular-ui-router'
+asset 'bootstrap-sass-official'

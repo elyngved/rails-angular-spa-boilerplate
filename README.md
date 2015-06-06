@@ -1,4 +1,4 @@
-# Rails/AngularJS SPA Boilerplat
+# Rails/AngularJS SPA Boilerplate
 
 This is a simple app to get you started building a single page application with a Rails back end and AngularJS and UI Router managing the front end. 
 

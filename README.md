@@ -7,3 +7,4 @@ This is a simple app to get you started building a single page application with 
 - Angular UI Router
 - Rspec
 - Grape for API management
+- Bootstrap SASS with JavaScript plugins

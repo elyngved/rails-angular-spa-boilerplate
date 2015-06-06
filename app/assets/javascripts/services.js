@@ -1,4 +1,4 @@
-angular.module('app.services.home', ['ngResource'])
+angular.module('app.services', ['ngResource'])
 
 .factory('HomeService', ['$resource', function($resource) {
   return $resource(

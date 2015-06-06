@@ -6,12 +6,13 @@
 
 //= require_self
 //= require_tree ./controllers
-//= require_tree ./services
+//= require services
 
 var app = angular.module('app', [
   'ui.router',
 
-  'app.controllers.home'
+  'app.controllers.home',
+  'app.services'
 ]);
 
 app.config([

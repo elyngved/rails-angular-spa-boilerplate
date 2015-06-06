@@ -1,5 +1,9 @@
-angular.module('app.controllers.home', [])
+angular.module('app.controllers.home', [
+  'app.services.home'
+])
 
-.controller('HomeCtrl', ['$scope', '$state', function($scope, $state) {
-  $scope.message = "Hello, world!"
+.controller('HomeCtrl', ['$scope', '$state', 'HomeService', function($scope, $state, HomeService) {
+  HomeService.welcome({}, function(response) {
+    $scope.message = response.message;
+  })
 }])

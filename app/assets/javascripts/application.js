@@ -1,9 +1,12 @@
 //= require jquery
-//= require angular/angular
-//= require angular-ui-router/release/angular-ui-router
+//= require angular
+//= require angular-resource
+//= require angular-ui-router
+//= require bootstrap-sass-official/assets/javascripts/bootstrap-sprockets
 
 //= require_self
 //= require_tree ./controllers
+//= require_tree ./services
 
 var app = angular.module('app', [
   'ui.router',
@@ -14,7 +17,13 @@ var app = angular.module('app', [
 app.config([
   '$stateProvider',
   '$urlRouterProvider',
-  function($stateProvider, $urlRouterProvider) {
+  '$locationProvider',
+  function($stateProvider, $urlRouterProvider, $locationProvider) {
+
+    $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
 
     var templatePath = function(filename) {
       return '/assets/templates/' + filename + '.html';
